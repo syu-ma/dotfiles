@@ -65,3 +65,21 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" start NERDTree by Ctrl-E
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
+" Go to Next Tab by Ctrl-Tab
+nnoremap <S-Tab> gt
+"Back to Previous Tab by Ctrl-Shift-Tab
+nnoremap <S-C-Tab>  gT
+
+"------------------------------------------------------------------------------------------------------------------
+" vim-plug plugins
+call plug#begin('~/.vim/plugged')
+
+"Plug 'sample'
+" ディレクトリ表示
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+call plug#end()
